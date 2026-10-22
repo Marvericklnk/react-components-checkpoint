@@ -1,0 +1,44 @@
+:root {
+  --paper: #f7f5f0;
+  --ink: #242620;
+  --muted: #74766b;
+  --green: #54623c;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); }
+.App { min-height: 100vh; font-family: Arial, sans-serif; }
+.page-header { max-width: 1120px; margin: auto; padding: 30px 32px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.brand { color: var(--ink); font-size: 23px; font-weight: bold; text-decoration: none; letter-spacing: -1px; }
+.brand span { color: #aaa58e; font-weight: normal; padding: 0 4px; }
+.checkpoint-label { font-size: 9px; letter-spacing: 2px; color: var(--muted); }
+.showcase { max-width: 960px; padding-top: 40px; }
+.eyebrow { font-size: 10px; font-weight: bold; letter-spacing: 2px; color: var(--muted); margin-bottom: 18px; }
+.product-card { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #e8e4da; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 38px #3d38200a; }
+.image-panel { min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: space-between; background: #e6e8d9; padding: 26px 20px; }
+.edition-label, .image-caption { font-size: 8px; letter-spacing: 2px; color: #65704f; }
+.product-image { width: 100%; max-width: 380px; height: 300px; object-fit: contain; }
+.product-details { padding: 50px 38px 36px; display: flex; flex-direction: column; align-items: flex-start; }
+.product-badge { padding: 8px 10px; border: 1px solid #e7e6dc; font-size: 8px; letter-spacing: 1.5px; font-weight: normal; }
+.product-name { font-family: Georgia, serif; font-size: clamp(34px, 4vw, 46px); font-weight: normal; line-height: 1.08; margin: 22px 0 18px; letter-spacing: -1px; }
+.product-description { color: #64675d; font-size: 13px; line-height: 1.85; margin-bottom: 26px; }
+.price-area { display: flex; justify-content: space-between; align-items: center; gap: 15px; width: 100%; }
+.product-price { color: var(--green); font-size: 29px; font-weight: bold; margin: 0; }
+.price-caption { color: var(--muted); font-size: 10px; }
+.detail-note { margin-top: 26px; padding-top: 20px; border-top: 1px solid #ecebe4; width: 100%; color: var(--muted); font-size: 11px; }
+.greeting { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 32px 12px; }
+.welcome-image { height: 48px; width: 48px; }
+.greeting h2 { font-size: 18px; margin: 0 0 5px; }
+.greeting p { color: var(--muted); font-size: 11px; margin: 0; }
+footer { text-align: center; color: var(--muted); font-size: 10px; padding: 20px; }
+a:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+@media (max-width: 650px) {
+  .page-header { padding: 23px 20px; }
+  .checkpoint-label { font-size: 7px; letter-spacing: 1px; max-width: 110px; text-align: right; }
+  .showcase { padding: 20px 16px 0; }
+  .product-card { grid-template-columns: 1fr; }
+  .product-image { height: 240px; }
+  .product-details { padding: 30px 26px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
