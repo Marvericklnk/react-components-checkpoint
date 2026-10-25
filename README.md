@@ -1,5 +1,9 @@
 # React Product Card
 
+[Live demo](https://marvericklnk.github.io/react-components-checkpoint/)
+
+![Project preview](screenshots/preview.jpg)
+
 A responsive product card for the GoMyCode React Components and JSX checkpoint. Built with React and React Bootstrap.
 
 ## Features
